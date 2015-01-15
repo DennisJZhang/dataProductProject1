@@ -9,6 +9,10 @@ shinyUI(fluidPage(
   # Sidebar with a slider input for the number of bins
   sidebarLayout(
     sidebarPanel(
+      helpText("Usage Documentation: Calculate your BMI ratio. To use the application, please first 
+               select your weight (in kg) and your height (in cm) in the slidebar. 
+               You then need to hit 'submit' button. Your BMI and range will
+               show on the main panel."),
       sliderInput("weight",
                   "Weight (kg):",
                   min = 1,
